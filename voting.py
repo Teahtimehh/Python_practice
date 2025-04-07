@@ -14,7 +14,7 @@ def main():
     citizenship = get_yes_no('Вы гражданин этой страны?')
     convictions = get_yes_no('Вы были судимы?')
 
-    if age == True and citizenship and not convictions:
+    if age and citizenship and not convictions:
         print("Результат: Вы можете голосовать")
     else:
         print("Результат: Вы не можете голосовать")
