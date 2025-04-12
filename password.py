@@ -1,8 +1,6 @@
-password = "lucky"
-
-def getwords():
+def getwords(password="lucky"):
     while True:
-        words = input("Введите пароль: ")
+        words = str(input("Введите пароль: "))
         if words == password:
             return words
         else:
@@ -10,4 +8,4 @@ def getwords():
 
 
 number = getwords()
-print("Вы ввели правильный пароль", number)
+print("Вы ввели правильный пароль:", number)
